@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Facisa.TESI.Dotnet.Blog.Models.Post>
+
+@{
+    ViewBag.Title = "Posts";
+}
+
+<h2>Posts</h2>
+
+<p>
+    @Html.ActionLink("Criar Novo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Texto)
+        </td>
+        <td>
+          
+            @Html.ActionLink("Detalhes", "Details", new { id=item.ID }) 
+            
+        </td>
+    </tr>
+}
+
+</table>
