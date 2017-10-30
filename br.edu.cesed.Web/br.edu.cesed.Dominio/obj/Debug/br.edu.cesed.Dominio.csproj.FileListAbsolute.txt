@@ -1,0 +1,11 @@
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Dominio\bin\Debug\br.edu.cesed.Dominio.dll
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Dominio\bin\Debug\br.edu.cesed.Dominio.pdb
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Dominio\obj\Debug\br.edu.cesed.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Dominio\obj\Debug\br.edu.cesed.Dominio.dll
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Dominio\obj\Debug\br.edu.cesed.Dominio.pdb
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Dominio\bin\Debug\br.edu.cesed.Dominio.dll
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Dominio\bin\Debug\br.edu.cesed.Dominio.pdb
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Dominio\obj\Debug\br.edu.cesed.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Dominio\obj\Debug\br.edu.cesed.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Dominio\obj\Debug\br.edu.cesed.Dominio.dll
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Dominio\obj\Debug\br.edu.cesed.Dominio.pdb

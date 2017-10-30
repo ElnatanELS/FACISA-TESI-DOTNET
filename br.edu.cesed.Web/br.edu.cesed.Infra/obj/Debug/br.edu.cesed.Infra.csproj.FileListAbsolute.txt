@@ -1,0 +1,25 @@
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Infra.dll.config
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Infra.dll
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Infra.pdb
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Dominio.dll
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.dll
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Dominio.pdb
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.xml
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\obj\Debug\br.edu.cesed.Infra.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\obj\Debug\br.edu.cesed.Infra.dll
+C:\Users\aluno\Documents\Visual Studio 2015\Projects\br.edu.cesed.Web\br.edu.cesed.Infra\obj\Debug\br.edu.cesed.Infra.pdb
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Infra.dll.config
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Infra.dll
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Infra.pdb
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Dominio.dll
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\br.edu.cesed.Dominio.pdb
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\obj\Debug\br.edu.cesed.Infra.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\obj\Debug\br.edu.cesed.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\obj\Debug\br.edu.cesed.Infra.dll
+C:\Users\Administrador\Desktop\Elnatan git\br.edu.cesed.Web\br.edu.cesed.Infra\obj\Debug\br.edu.cesed.Infra.pdb
