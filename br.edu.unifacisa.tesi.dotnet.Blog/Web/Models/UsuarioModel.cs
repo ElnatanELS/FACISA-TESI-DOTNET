@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Dominio
+namespace Web.Models
 {
-    public class Usuario
+    public class UsuarioModel
     {
-        public int UsuarioId { get; set; }
+      
         public string Nome { get; set; }
         public string Email { get; set; }
         public DateTime DataCadastro { get; set; }
-
-
-
     }
 }
