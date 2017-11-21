@@ -11,108 +11,108 @@ using Infra;
 
 namespace Web.Controllers
 {
-    public class UsuariosController : Controller
+    public class ComentariosController : Controller
     {
         private ModelContext db = new ModelContext();
 
-        // GET: Usuarios
+        // GET: Comentarios
         public ActionResult Index()
         {
-            return View(db.Usuarios.ToList());
+            return View(db.Comentarios.ToList());
         }
 
-        // GET: Usuarios/Details/5
+        // GET: Comentarios/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Comentario comentario = db.Comentarios.Find(id);
+            if (comentario == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(comentario);
         }
 
-        // GET: Usuarios/Create
+        // GET: Comentarios/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Usuarios/Create
+        // POST: Comentarios/Create
         // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "UsuarioId,Nome,Email")] Usuario usuario)
+        public ActionResult Create([Bind(Include = "ComentarioID,Texto")] Comentario comentario)
         {
             if (ModelState.IsValid)
             {
-                usuario.DataCadastro =  DateTime.Now;
-                db.Usuarios.Add(usuario);
+                comentario.DataCadastro = DateTime.Now;
+                db.Comentarios.Add(comentario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(usuario);
+            return View(comentario);
         }
 
-        // GET: Usuarios/Edit/5
+        // GET: Comentarios/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Comentario comentario = db.Comentarios.Find(id);
+            if (comentario == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(comentario);
         }
 
-        // POST: Usuarios/Edit/5
+        // POST: Comentarios/Edit/5
         // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "UsuarioId,Nome,Email,DataCadastro")] Usuario usuario)
+        public ActionResult Edit([Bind(Include = "ComentarioID,Texto,DataCadastro")] Comentario comentario)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(usuario).State = EntityState.Modified;
+                db.Entry(comentario).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(usuario);
+            return View(comentario);
         }
 
-        // GET: Usuarios/Delete/5
+        // GET: Comentarios/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Comentario comentario = db.Comentarios.Find(id);
+            if (comentario == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(comentario);
         }
 
-        // POST: Usuarios/Delete/5
+        // POST: Comentarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Usuario usuario = db.Usuarios.Find(id);
-            db.Usuarios.Remove(usuario);
+            Comentario comentario = db.Comentarios.Find(id);
+            db.Comentarios.Remove(comentario);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

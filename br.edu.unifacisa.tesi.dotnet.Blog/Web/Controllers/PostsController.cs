@@ -11,108 +11,108 @@ using Infra;
 
 namespace Web.Controllers
 {
-    public class UsuariosController : Controller
+    public class PostsController : Controller
     {
         private ModelContext db = new ModelContext();
 
-        // GET: Usuarios
+        // GET: Posts
         public ActionResult Index()
         {
-            return View(db.Usuarios.ToList());
+            return View(db.Posts.ToList());
         }
 
-        // GET: Usuarios/Details/5
+        // GET: Posts/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Post post = db.Posts.Find(id);
+            if (post == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(post);
         }
 
-        // GET: Usuarios/Create
+        // GET: Posts/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Usuarios/Create
+        // POST: Posts/Create
         // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "UsuarioId,Nome,Email")] Usuario usuario)
+        public ActionResult Create([Bind(Include = "PostID,Titulo,Texto")] Post post)
         {
             if (ModelState.IsValid)
             {
-                usuario.DataCadastro =  DateTime.Now;
-                db.Usuarios.Add(usuario);
+                post.DataCastrado = DateTime.Now;
+                db.Posts.Add(post);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(usuario);
+            return View(post);
         }
 
-        // GET: Usuarios/Edit/5
+        // GET: Posts/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Post post = db.Posts.Find(id);
+            if (post == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(post);
         }
 
-        // POST: Usuarios/Edit/5
+        // POST: Posts/Edit/5
         // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "UsuarioId,Nome,Email,DataCadastro")] Usuario usuario)
+        public ActionResult Edit([Bind(Include = "PostID,Titulo,Texto,DataCastrado")] Post post)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(usuario).State = EntityState.Modified;
+                db.Entry(post).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(usuario);
+            return View(post);
         }
 
-        // GET: Usuarios/Delete/5
+        // GET: Posts/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Post post = db.Posts.Find(id);
+            if (post == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(post);
         }
 
-        // POST: Usuarios/Delete/5
+        // POST: Posts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Usuario usuario = db.Usuarios.Find(id);
-            db.Usuarios.Remove(usuario);
+            Post post = db.Posts.Find(id);
+            db.Posts.Remove(post);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
