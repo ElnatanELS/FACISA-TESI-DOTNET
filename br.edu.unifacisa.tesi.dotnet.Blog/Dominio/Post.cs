@@ -24,5 +24,7 @@ namespace Dominio
             this.Comentarios = new HashSet<Comentario>();
 
         }
+
+        
     }
 }

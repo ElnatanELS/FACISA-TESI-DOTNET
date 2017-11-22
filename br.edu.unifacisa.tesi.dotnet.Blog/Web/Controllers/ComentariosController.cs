@@ -16,9 +16,9 @@ namespace Web.Controllers
         private ModelContext db = new ModelContext();
 
         // GET: Comentarios
-        public ActionResult Index()
+        public ActionResult Index(int? id)
         {
-            return View(db.Comentarios.ToList());
+            return View(db.Comentarios.Find(id));
         }
 
         // GET: Comentarios/Details/5
@@ -47,14 +47,18 @@ namespace Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ComentarioID,Texto,DataCadastro,UsuarioId")] Comentario comentario, int? id)
+        public ActionResult Create([Bind(Include = "ComentarioID,Texto,DataCadastro,UsuarioId")] Comentario comentario, int? id, int? id2)
         {
             if (ModelState.IsValid)
             {
-                Comentario us = db.Comentarios.Find(id);
+                Usuario us = db.Usuarios.Find(id);
 
                 comentario.UsuarioId = us.UsuarioId;
 
+                Post ps = db.Posts.Find(id2);
+
+                comentario.PostId = ps.PostID;
+                
                 comentario.DataCadastro = DateTime.Now;
                 db.Comentarios.Add(comentario);
                 db.SaveChanges();

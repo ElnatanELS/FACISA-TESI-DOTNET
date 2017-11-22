@@ -1,7 +1,7 @@
 ﻿@model Dominio.Post
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalhes";
 }
 
 <h2>Details</h2>
@@ -52,8 +52,8 @@
 
     </dl>
 </div>
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.PostID }) |
-    @Html.ActionLink("Back to List", "Index") |
-    @Html.ActionLink("Comentar", "../Comentarios/create", new { id = Model.PostID })
+    @Html.ActionLink("Editar", "Edit", new { id = Model.PostID }) |
+    @Html.ActionLink("Comentar", "../Comentarios/create", new { id = Model.PostID, id2 = Model.UsuarioId }) 
 </p>

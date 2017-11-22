@@ -1,14 +1,12 @@
 ﻿@model IEnumerable<Dominio.Usuario>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Criar Usuario";
 }
 
-<h2>Index</h2>
+<h2>Criar Usuario</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
@@ -35,9 +33,9 @@
             @Html.DisplayFor(modelItem => item.DataCadastro)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.UsuarioId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.UsuarioId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.UsuarioId }) |
+            @Html.ActionLink("Editar", "Edit", new { id=item.UsuarioId }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.UsuarioId }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.UsuarioId }) |
             @Html.ActionLink("Postar", "../Posts/Create", new { id = item.UsuarioId }) |
         </td>
     </tr>

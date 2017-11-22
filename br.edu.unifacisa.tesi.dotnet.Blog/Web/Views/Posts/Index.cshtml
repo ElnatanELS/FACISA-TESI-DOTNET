@@ -1,14 +1,12 @@
 ﻿@model IEnumerable<Dominio.Post>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Postagens";
 }
 
-<h2>Index</h2>
+<h2>Postagens</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
@@ -44,12 +42,9 @@
             @Html.DisplayFor(modelItem => item.UsuarioId)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AreaId)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PostID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PostID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PostID })
+            @Html.ActionLink("Editar", "Edit", new { id=item.PostID }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.PostID }) |
+            @Html.ActionLink("Delet", "Delete", new { id=item.PostID })
         </td>
     </tr>
 }

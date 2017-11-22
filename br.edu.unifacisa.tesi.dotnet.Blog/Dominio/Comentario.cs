@@ -14,6 +14,8 @@ namespace Dominio
 
         public virtual Nullable<int> UsuarioId { get; set; }
 
-        
+        public virtual Nullable<int> PostId { get; set; }
+
+
     }
 }
