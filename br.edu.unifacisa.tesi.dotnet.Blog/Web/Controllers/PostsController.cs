@@ -47,10 +47,14 @@ namespace Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PostID,Titulo,Texto")] Post post)
+        public ActionResult Create([Bind(Include = "PostID,Titulo,Texto,UsuarioId,AreaId")] Post post, int? id)
         {
             if (ModelState.IsValid)
             {
+                Usuario us = db.Usuarios.Find(id);
+
+                post.UsuarioId = us.UsuarioId;
+
                 post.DataCastrado = DateTime.Now;
                 db.Posts.Add(post);
                 db.SaveChanges();
@@ -80,7 +84,7 @@ namespace Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PostID,Titulo,Texto,DataCastrado")] Post post)
+        public ActionResult Edit([Bind(Include = "PostID,Titulo,Texto,DataCastrado,UsuarioId,AreaId")] Post post)
         {
             if (ModelState.IsValid)
             {

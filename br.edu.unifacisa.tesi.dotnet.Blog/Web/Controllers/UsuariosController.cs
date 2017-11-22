@@ -51,10 +51,10 @@ namespace Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                usuario.DataCadastro =  DateTime.Now;
+                usuario.DataCadastro = DateTime.Now;
                 db.Usuarios.Add(usuario);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("../Home/Index");
             }
 
             return View(usuario);
@@ -86,7 +86,7 @@ namespace Web.Controllers
             {
                 db.Entry(usuario).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Home/Index");
             }
             return View(usuario);
         }

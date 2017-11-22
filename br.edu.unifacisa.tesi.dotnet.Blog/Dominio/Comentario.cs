@@ -12,7 +12,7 @@ namespace Dominio
         public string Texto { get; set; }
         public DateTime DataCadastro { get; set; }
 
-        public virtual Usuario Usuario { get; set; }
+        public virtual Nullable<int> UsuarioId { get; set; }
 
         
     }

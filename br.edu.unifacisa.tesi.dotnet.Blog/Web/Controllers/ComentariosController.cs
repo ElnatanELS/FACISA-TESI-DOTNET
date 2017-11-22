@@ -47,10 +47,14 @@ namespace Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ComentarioID,Texto")] Comentario comentario)
+        public ActionResult Create([Bind(Include = "ComentarioID,Texto,DataCadastro,UsuarioId")] Comentario comentario, int? id)
         {
             if (ModelState.IsValid)
             {
+                Comentario us = db.Comentarios.Find(id);
+
+                comentario.UsuarioId = us.UsuarioId;
+
                 comentario.DataCadastro = DateTime.Now;
                 db.Comentarios.Add(comentario);
                 db.SaveChanges();
@@ -80,7 +84,7 @@ namespace Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ComentarioID,Texto,DataCadastro")] Comentario comentario)
+        public ActionResult Edit([Bind(Include = "ComentarioID,Texto,DataCadastro,UsuarioId")] Comentario comentario)
         {
             if (ModelState.IsValid)
             {

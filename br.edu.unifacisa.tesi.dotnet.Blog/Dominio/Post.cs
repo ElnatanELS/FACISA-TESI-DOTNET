@@ -13,15 +13,15 @@ namespace Dominio
         public string Texto { get; set; }
         public DateTime DataCastrado { get; set; }
 
-        public virtual Usuario Usuario { get; set; }
+        public virtual Nullable<int> UsuarioId { get; set; }
 
         public virtual ICollection<Comentario> Comentarios { get; set; }
 
-        public virtual Area Area { get; set; }
+        public Nullable<int> AreaId { get; set; }
 
         public Post()
         {
-            Comentarios = new HashSet<Comentario>();
+            this.Comentarios = new HashSet<Comentario>();
 
         }
     }

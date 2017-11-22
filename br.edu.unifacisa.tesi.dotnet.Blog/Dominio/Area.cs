@@ -11,5 +11,7 @@ namespace Dominio
         public int AreaId { get; set; }
         public string Nome { get; set; }
 
+
+
     }
 }

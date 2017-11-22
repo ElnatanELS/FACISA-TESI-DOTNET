@@ -13,7 +13,16 @@ namespace Dominio
         public string Email { get; set; }
         public DateTime DataCadastro { get; set; }
 
+        public virtual ICollection<Post> Posts { get; set; }
+    
+        public virtual ICollection<Comentario> Comentarios { get; set; }
 
+
+        public Usuario()
+        {
+            this.Posts = new HashSet<Post>();
+            this.Comentarios = new HashSet<Comentario>();
+        }
 
     }
 }
